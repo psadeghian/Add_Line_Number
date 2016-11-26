@@ -18,5 +18,5 @@ try:
     file.close()
 
 except FileNotFoundError:
-    print("Input file was not found.")
+    print("File was not found.")
 
