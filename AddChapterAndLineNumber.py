@@ -19,7 +19,7 @@ try:
                 line_count = 0
                 chapter_count += 1
             line_count += 1
-            text = str(chapter_count) + "-" + str(line_count) + '\talex' + line
+            text = str(chapter_count) + "-" + str(line_count) + '\t' + line
             line_list.append(text)
     file.close()
 
@@ -29,7 +29,7 @@ try:
 
     file = open(file_path, "w")
     for line in line_list:
-        print(line, file=file)
+        print(line, file=file, end="")
     file.close()
 
 except FileNotFoundError:
